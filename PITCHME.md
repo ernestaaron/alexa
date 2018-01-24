@@ -14,45 +14,36 @@ The skill we’re going to build is going to be an adaptation of the classic “
 ---
 Building your first skill will comprise of four steps. First we’re going to copy the “Hello, World!” code into Amazon Lambda, which will be responsible for running the code. Next we’re going to set up our skill in the Amazon Alexa Skills Developer Portal, and link our lambda account to that skill. Then we’re going to test using the Amazon service simulator and on an Alexa-enabled device. Lastly, we’ll walk through the steps of customizing your skill to your needs.
 ---
-![Alexa Skill Links](https://cdn-images-1.medium.com/max/800/1*yfcCpuXFFdiZN35T5CLP5g.png)
-
-I put together a list of resources at [https://bit.ly/alexaskill](https://bit.ly/alexaskill), which is a public Instapaper folder I set up to make sharing the list of links easy. The slides will refer to each of these links. I’d recommend having this open in a tab so you can refer back to the links easily.
-
 ## Step 1
 
 ![Step 1: Lambda](https://cdn-images-1.medium.com/max/1200/1*xp0LoXq9DA80M2jQDZwkEA.png)
-
+---
 ![Step 1a: AWS Login](https://cdn-images-1.medium.com/max/1200/1*_FESNc05l3WFlfdrPwa3Cw.png)
-
+---
 * Open the [AWS Lambda console](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create?step=2)
 * Login or create an account with the same Amazon account that your Alexa device is linked to.
-
+---
 ![Step 1b: Amazon Lambda Function](https://cdn-images-1.medium.com/max/800/1*JVW4EmIx2xKnx6aYXqoJMg.png)
 
 Enter the name of your Lambda function. It’s not very important what the name is but it needs to be unique, you can just use “HelloWorld”. In the top right it should say “N. Virginia”. If that’s not the case please select “US-East (N. Virginia)” from the dropdown.
-
+---
 ![Step 1c: Copy Source Code](https://cdn-images-1.medium.com/max/800/1*TCQhZoLBJtDKdrpMBLxyUA.png)
-
-Copy the [Hello World application source code](https://github.com/Donohue/alexa/blob/master/src/index.js)
-
-![Step 1d: Paste Source Code](https://cdn-images-1.medium.com/max/1200/1*tVBGkuBWAk-wis-PAk07rg.png)
+---
+Copy the [Hello World application source code](https://github.com/ernestaaron/alexa/blob/master/src/index.js)
+---
+![Step 1d: Paste Source Code](https://cdn-images-1.medium.com/max/800/1*tVBGkuBWAk-wis-PAk07rg.png)
 
 Back in Lambda, you’re going to scroll down a bit and paste the code you copied from GitHub into the large text box under “Lambda function code”.
-
-![Step 1e: Set Execution Role](https://cdn-images-1.medium.com/max/1200/1*gXwTF9sNj_7L-45d8haE8A.png)
-
+---
+![Step 1e: Set Execution Role](https://cdn-images-1.medium.com/max/800/1*gXwTF9sNj_7L-45d8haE8A.png)
+---
 Scroll down a bit further to the “Lambda function handler and role” section. You’re going to want to set the role to “lambda\_basic\_execution”. It’s important to note that if this is your first time using Lambda, you’ll have to create the “lambda\_basic\_execution” role. You can do that by selecting the first option “* Basic Execution” and clicking the blue button on the next page. After you take that step, you should be able to select “lambda\_basic\_execution”.
-
-
-![Step 1d: Finish Creating Lambda Function](https://cdn-images-1.medium.com/max/1200/1*C36HxbtFT3lF9pFmv3JmDQ.png)
-
+---
+![Step 1d: Finish Creating Lambda Function](https://cdn-images-1.medium.com/max/800/1*C36HxbtFT3lF9pFmv3JmDQ.png)
+---
 Once you’ve created the function, click on the “Event Sources” tab, then click the blue “Add event source” link, then select “Alexa Skills Kit” from the modal dropdown.
-
+---
 Please note if you’ve never signed up for the [Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list), you’ll have to do that first before the “Alexa Skills Kit” will appear from the Event Sources dropdown. Please also make sure you use the same Amazon account as the one you’re using for AWS and your Echo.
-
-## Step 1 Done
-
-![Step 1 Done](https://cdn-images-1.medium.com/max/800/1*WXBkb3sWDvcw6ifyzvrItQ.gif)
 
 Keep the Amazon Lambda tab open though, we’ll need to come back to it!
 
@@ -72,27 +63,27 @@ Click the yellow “Get Started >” button under “Alexa Skills Kit”, then t
 
 The name of your Amazon Alexa skill must be unique for your account, and the invocation name is what you’ll use to activate the skill. “Alexa, tell <invocation name> to say Hello, World”. You can use “Hello World” if you’re lacking in creativity. Click the yellow “Next” button when you’re ready!
 
-![Step 2d: Interaction Model](https://cdn-images-1.medium.com/max/1200/1*iXt3o6KxIZ-wdrRfi4aHpA.png)
+![Step 2d: Interaction Model](https://cdn-images-1.medium.com/max/800/1*iXt3o6KxIZ-wdrRfi4aHpA.png)
 
 Here is where we’re going to tell the skill which intents we support, and what type of words will trigger each intent. Get ready for some copy and pasting.
 
 ![Step 2e: Copy Intent Schema](https://cdn-images-1.medium.com/max/800/1*Di-Zf3m1N0AWiHKXIpuqPg.png)
 
-Open the [Hello World intent schema](https://github.com/Donohue/alexa/blob/master/speechAssets/IntentSchema.json) and copy all of the text in the box.
+Open the [Hello World intent schema](https://github.com/ernestaaron/alexa/blob/master/speechAssets/IntentSchema.json) and copy all of the text in the box.
 
-![Step 2f: Paste Intent Schema](https://cdn-images-1.medium.com/max/1200/1*eBNZPWCWbasqh7H64sAGWQ.png)
+![Step 2f: Paste Intent Schema](https://cdn-images-1.medium.com/max/800/1*eBNZPWCWbasqh7H64sAGWQ.png)
 
 Back in the Amazon Skills portal, paste the intent schema you copied into the Intent Schema field.
 
 ![Step 2g: Copy Sample Utterances](https://cdn-images-1.medium.com/max/800/1*ob0OlUPBdm8svBKhUFCdnA.png)
 
-Open the [Hello World sample utterances](https://github.com/Donohue/alexa/blob/master/speechAssets/SampleUtterances.txt) and copy all of the text in the box.
+Open the [Hello World sample utterances](https://github.com/ernestaaron/alexa/blob/master/speechAssets/SampleUtterances.txt) and copy all of the text in the box.
 
-![Step 2h: Paste Sample Utterances](https://cdn-images-1.medium.com/max/1200/1*DFmTpNRTDYFaox3JqVGnQw.png)
+![Step 2h: Paste Sample Utterances](https://cdn-images-1.medium.com/max/800/1*DFmTpNRTDYFaox3JqVGnQw.png)
 
 Back in the Amazon Skills portal, paste the sample utterances you copied into the Sample Utterances field. Click the yellow “Next” button after you’ve pasted the Sample Utterances.
 
-![Step 2i: Configuration](https://cdn-images-1.medium.com/max/1200/1*HKEFi0ievrGYBnoG0jBNMA.png)
+![Step 2i: Configuration](https://cdn-images-1.medium.com/max/800/1*HKEFi0ievrGYBnoG0jBNMA.png)
 
 Change the radio button from “HTTPS” to “Lambda ARN” and select the “No” radio button under Account Linking. Now we’ll have to go and grab the Lambda Amazon Resource Name (ARN) from our Lambda tab. You still have that open, right?
 
