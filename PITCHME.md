@@ -14,8 +14,6 @@ The skill we’re going to build is going to be an adaptation of the classic “
 ---
 Building your first skill will comprise of four steps. First we’re going to copy the “Hello, World!” code into Amazon Lambda, which will be responsible for running the code. Next we’re going to set up our skill in the Amazon Alexa Skills Developer Portal, and link our lambda account to that skill. Then we’re going to test using the Amazon service simulator and on an Alexa-enabled device. Lastly, we’ll walk through the steps of customizing your skill to your needs.
 ---
-## Step 1
-
 ![Step 1: Lambda](https://cdn-images-1.medium.com/max/800/1*xp0LoXq9DA80M2jQDZwkEA.png)
 ---
 ![Step 1a: AWS Login](https://cdn-images-1.medium.com/max/800/1*_FESNc05l3WFlfdrPwa3Cw.png)
@@ -95,8 +93,6 @@ The ARN is on the top right of the Lambda function page. I have it selected in t
 
 Paste the ARN into the text field, and press “Next”.
 ---
-## Step 3
-
 ![Step 3: Amazon Skill Test](https://cdn-images-1.medium.com/max/800/1*EQPNZwXv_8QO6_cvs3kiXA.png)
 
 ![Step 3a: Service Simulator](https://cdn-images-1.medium.com/max/800/1*web80Yh6h15z3Psxa2VL3g.png)
@@ -111,8 +107,6 @@ If you got the correct output using the Service Simulator, try it on the Amazon 
 ---
 Congrats, you just created your first Alexa skill! 👏👏
 ---
-## Step 4: Customize
-
 ![Step 4: Customize](https://cdn-images-1.medium.com/max/800/1*8tYf2HJDh9k-0F43bn-oLA.png)
 ---
 ![Step 4a: Change Sample Utterances](https://cdn-images-1.medium.com/max/800/1*DWJUFWqGUSxekLk9xOf7BQ.png)
