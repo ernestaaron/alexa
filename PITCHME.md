@@ -46,8 +46,6 @@ Please note if you’ve never signed up for the [Amazon Developer Portal](https:
 
 Keep the Amazon Lambda tab open though, we’ll need to come back to it!
 ---
-## Step 2
-
 ![Step 2: Amazon Skills Portal](https://cdn-images-1.medium.com/max/800/1*fLVUygy4wQszmxRPS5PWHA.png)
 ---
 ![Step 2a: Amazon Developer Login](https://cdn-images-1.medium.com/max/800/1*hGmDXfH3F2mKH6gIkCPZXA.png)
