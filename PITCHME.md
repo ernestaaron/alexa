@@ -1,4 +1,5 @@
 # Build your First Alexa Skill
+
 ---
 ![Capital One Alexa](https://www.capitalone.com/assets/contentful/50getrnucu47/9Oo0qWoK6AuQsMSSY04y0/21622d0fe07b789042d71464f8fb76f4/echo-article_feature.jpeg)
 ---
@@ -125,5 +126,9 @@ Go back to “Interaction Model” tab in the Alexa Skill Developer portal, and 
 
 [![Everything Is AWESOME](https://img.youtube.com/vi/fxLhhM8RU-o/0.jpg)](https://www.youtube.com/watch?v=fxLhhM8RU-o "Everything Is AWESOME")
 
+<!---
+The original contents of this tutorial were written by Brian Donohue and tweaked for an Alexa basic workshop.
+Original content can be found https://github.com/Donohue/alexa 
+-->
 
 
