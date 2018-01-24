@@ -87,7 +87,7 @@ Change the radio button from “HTTPS” to “Lambda ARN” and select the “N
 ![Step 2j: Copy ARN](https://cdn-images-1.medium.com/max/800/1*yodxeQKrYjxxh26txdKtKg.png)
 
 The ARN is on the top right of the Lambda function page. I have it selected in the image above. You’ll want to copy the selection as I have it above.
-
+---
 ![Step 2k: Paste ARN](https://cdn-images-1.medium.com/max/800/1*iJHo8qnBQb__hbQL0ro7lA.png)
 
 Paste the ARN into the text field, and press “Next”.
