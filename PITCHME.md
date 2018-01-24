@@ -1,5 +1,7 @@
 # Build your First Alexa Skill
-
+---
+![Capital One Alexa](https://www.capitalone.com/assets/contentful/50getrnucu47/9Oo0qWoK6AuQsMSSY04y0/21622d0fe07b789042d71464f8fb76f4/echo-article_feature.jpeg)
+---
 ![Alexa Skill Terminology](https://cdn-images-1.medium.com/max/1200/1*E3155-o18xfC9hVHCriTbQ.png)
 ---
 Each Alexa skill is comprised of an “Invocation Name” which you can think of as your app name, a set of “Intents” and the phrases that map to each intent, and the software that can detect the intent and return an appropriate result.
@@ -9,7 +11,7 @@ Each Alexa skill is comprised of an “Invocation Name” which you can think of
 The skill we’re going to build is going to be an adaptation of the classic “Hello, World!” program.
 ---
 ![Skill Steps](https://cdn-images-1.medium.com/max/1200/1*24YIKOd6a88tep2No3j2bA.png)
-
+---
 Building your first skill will comprise of four steps. First we’re going to copy the “Hello, World!” code into Amazon Lambda, which will be responsible for running the code. Next we’re going to set up our skill in the Amazon Alexa Skills Developer Portal, and link our lambda account to that skill. Then we’re going to test using the Amazon service simulator and on an Alexa-enabled device. Lastly, we’ll walk through the steps of customizing your skill to your needs.
 ---
 ![Alexa Skill Links](https://cdn-images-1.medium.com/max/1200/1*yfcCpuXFFdiZN35T5CLP5g.png)
